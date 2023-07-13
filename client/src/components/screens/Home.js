@@ -9,7 +9,7 @@ const Home  = ()=>{
     const [data,setData] = useState([])
     const {state,dispatch} = useContext(UserContext)
     useEffect(()=>{
-       fetch('https://epollingwebsite.onrender.com:10000/allpost',{
+       fetch('https://epollingwebsite.onrender.com/allpost',{
            headers:{
                "Authorization":"Bearer "+localStorage.getItem("jwt")
            }
@@ -30,7 +30,7 @@ const Home  = ()=>{
           })
           .then((willDelete) => {
             if (willDelete) {
-                fetch('https://epollingwebsite.onrender.com:10000/vote',{
+                fetch('https://epollingwebsite.onrender.com/vote',{
                     method:"put",
                     headers:{
                         "Content-Type":"application/json",

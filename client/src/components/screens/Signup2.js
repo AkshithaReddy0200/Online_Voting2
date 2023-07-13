@@ -44,7 +44,7 @@ const SignUp  = ()=>{
         // const obj = {firstname,lastname,password,email,city,stateName,mobile,branch,pic:url}
         // console.log(obj)
         
-            fetch("https://epollingwebsite.onrender.com:10000/signup",{
+            fetch("https://epollingwebsite.onrender.com/signup",{
             method:"post",
             headers:{
                 "Content-Type":"application/json"

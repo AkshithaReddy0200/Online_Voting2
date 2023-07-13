@@ -6,7 +6,7 @@ const Posts  = ()=>{
     const [data,setData] = useState([])
   
     useEffect(()=>{
-       fetch('https://epollingwebsite.onrender.com:10000/posts',{
+       fetch('https://epollingwebsite.onrender.com/posts',{
          
        }).then(res=>res.json())
        .then(result=>{

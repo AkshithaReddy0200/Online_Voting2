@@ -33,7 +33,7 @@ const CreatePoll  = ()=>{
         
         // const obj = {firstname,lastname,password,email,city,stateName,mobile,branch,pic:url}
         // console.log(obj)
-        fetch("https://epollingwebsite.onrender.com:10000/createpoll",{
+        fetch("https://epollingwebsite.onrender.com/createpoll",{
             method:"post",
             headers:{
                 "Content-Type":"application/json"

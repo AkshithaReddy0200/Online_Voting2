@@ -23,7 +23,7 @@ const Chart = () => {
     )
 
     useEffect(()=>{
-        fetch('https://epollingwebsite.onrender.com:10000/allpost',{
+        fetch('https://epollingwebsite.onrender.com/allpost',{
             headers:{
                 "Authorization":"Bearer "+localStorage.getItem("jwt")
             }
