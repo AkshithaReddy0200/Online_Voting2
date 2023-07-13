@@ -23,7 +23,7 @@ const Chart = () => {
     )
 
     useEffect(()=>{
-        fetch('http://localhost:5000/allpost',{
+        fetch('https://epollingwebsite.onrender.com:10000/allpost',{
             headers:{
                 "Authorization":"Bearer "+localStorage.getItem("jwt")
             }

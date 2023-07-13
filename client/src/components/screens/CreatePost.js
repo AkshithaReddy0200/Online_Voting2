@@ -5,7 +5,7 @@ const CretePost = ()=>{
     const [data,setData] = useState([])
   
     useEffect(()=>{
-       fetch('http://localhost:5000/posts',{
+       fetch('https://epollingwebsite.onrender.com:10000/posts',{
          
        }).then(res=>res.json())
        .then(result=>{
