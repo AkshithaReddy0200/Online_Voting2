@@ -30,6 +30,6 @@ export const sName = [
     "West Bengal",
   ];
 
-  export const bName = ["ME","CSE","EC","CE","IT","BBA","MBA","MCA","BCA","B Com"];
+  export const bName = ["ME","CSE","ECE","CE","IT","AE","EEE","MBA"];
 
   export const userType = ["Admin","Voter"];

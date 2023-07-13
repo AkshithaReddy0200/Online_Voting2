@@ -59,6 +59,19 @@ const NavBar = ()=>{
            )}
            </div>
            <div style={{marginLeft:"60px"}}>
+           {state && state.isAdmin &&  (
+              <li 
+              style={{fontSize:"22px",fontWeight:"600",color:"white",float:"right",listStyleType:"none",}}
+             
+             >
+              <Link to="/createpoll" style={{color:"white",textDecoration:"none",fontSize:"20px",fontWeight:"600"}}>
+              <i className="fas fa-create-poll"></i> {" "}Enroll</Link>
+            
+             </li>
+             
+           )}
+           </div>
+           <div style={{marginLeft:"60px"}}>
            {state && (
               <li 
               style={{fontSize:"22px",fontWeight:"600",color:"white",float:"right",listStyleType:"none",}}

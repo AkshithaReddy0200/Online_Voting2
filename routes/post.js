@@ -40,8 +40,8 @@ router.get('/posts',(req,res)=>{
 
 
 
-router.post('/createpost',(req,res)=>{
-    const {title,pic} = req.body 
+router.post('/createpoll',(req,res)=>{
+    const {title,logo} = req.body 
     if(!title ){
       return  res.status(422).json({error:"Plase add all the fields"})
     }
@@ -49,7 +49,7 @@ router.post('/createpost',(req,res)=>{
     const post = new Post({
         title,
     
-        photo:pic,
+        photo:logo,
         postedBy:"admin"
     })
     post.save().then(result=>{
@@ -79,7 +79,7 @@ router.put('/vote',requireLogin,(req,res)=>{
                 from: "mahenmondal111@gmail.com",
                 subject: "E-voting ", 
                 html: `
-                <h3>,You has given your vote successfully to ${result.title}  </h3>
+                <h3>,You have given your vote successfully to ${result.title}  </h3>
                 `,
               });
             

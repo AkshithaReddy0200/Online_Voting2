@@ -33,7 +33,7 @@ const CretePost = ()=>{
               <th >Option</th>
               <th>Symbol</th>
               <th>Vote</th>
-              <th>Persentage Vote</th>
+              <th>Percentage Vote</th>
           </tr>
         </thead>
 

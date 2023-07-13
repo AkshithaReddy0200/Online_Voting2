@@ -11,6 +11,7 @@ import Home from './components/screens/Home'
  import Signup from './components/screens/Signup2'
 //import SignUp from './Attendance/screens/Signup';
 import CreatePost from './components/screens/CreatePost';
+import CreatePoll from './components/screens/CreatePoll';
 //import AttenHome from "./Attendance/Home"
 import {reducer,initialState} from './reducers/userReducer'
 
@@ -41,13 +42,14 @@ const Routing = ()=>{
       </Route>
       <Route path="/profile">
         <Profile />
+       </Route> 
+      <Route path="/createpoll">
+        <CreatePoll/>
       </Route>
-      {/* <Route path="/home">
-        <AttenHome />
-      </Route> */}
       <Route path="/result">
         <CreatePost/>
       </Route>
+  
     </Switch>
   )
 }
