@@ -46,7 +46,7 @@ const NavBar = ()=>{
           style={{color:"white",fontSize:"30px",textDecoration:"none",fontFamily:"Acme"}}>Online Voting System</Link>
            </div>
            <div style={{marginLeft:"60px"}}>
-           {state && state.isAdmin &&  (
+           {state &&   (
               <li 
               style={{fontSize:"22px",fontWeight:"600",color:"white",float:"right",listStyleType:"none",}}
              
